@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Bg-Changer/static/css/main.591d26d0.css",
+    "main.js": "/Bg-Changer/static/js/main.d6a8a5d3.js",
+    "static/js/453.5195ae70.chunk.js": "/Bg-Changer/static/js/453.5195ae70.chunk.js",
+    "index.html": "/Bg-Changer/index.html",
+    "main.591d26d0.css.map": "/Bg-Changer/static/css/main.591d26d0.css.map",
+    "main.d6a8a5d3.js.map": "/Bg-Changer/static/js/main.d6a8a5d3.js.map",
+    "453.5195ae70.chunk.js.map": "/Bg-Changer/static/js/453.5195ae70.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.591d26d0.css",
+    "static/js/main.d6a8a5d3.js"
+  ]
+}
