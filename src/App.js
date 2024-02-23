@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React from 'react';
+import { useState } from 'react';
 function App() {
+  const [color, setColor] = useState("beige");
+  const handleColorChange = (newColor) => {
+    setColor(newColor);
+  };
+  const handleCustomColorChange = (event) => {
+    setColor(event.target.value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg" style={{ backgroundColor: color }}>
+      <div className='div-bar'>
+        <button className="button" style={{ backgroundColor: "red" }} onClick={() => handleColorChange("red")}>Red</button>
+        <button className="button" style={{ backgroundColor: "blue" }} onClick={() => handleColorChange("blue")}>Blue</button>
+        <button className="button" style={{ backgroundColor: "green" }} onClick={() => handleColorChange("green")}>Green</button>
+        <button className="button" style={{ backgroundColor: "orange" }} onClick={() => handleColorChange("orange")}>Orange</button>
+        <button className="button" style={{ backgroundColor: "grey" }} onClick={() => handleColorChange("black")}>Black</button>
+        <input type="text" placeholder="Enter Yours" onChange={handleCustomColorChange} />     
+      </div>
     </div>
   );
 }
